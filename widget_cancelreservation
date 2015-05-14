@@ -1,0 +1,7 @@
+<div class="cancel-reservation pull-right">
+<i class="icon-lock white"></i>
+<!--:en--><a ref="https://reservation.miraiglobal.com/XMAS/reservation/show_request_cancel_reservation.htm?idtokenprovider=100375722&lang=en" class="tracking-link" title="Track/Cancel Reservation" target="_blank">Track/Cancel Reservation</a> | <a href="#" title="Clients area">Area cliente</a><!--:-->
+<!--:es--><a href="https://reservation.miraiglobal.com/XMAS/reservation/show_request_cancel_reservation.htm?idtokenprovider=100375722&lang=es" class="tracking-link" title="Ver/cancelar reserva" target="_blank">Ver/cancelar reserva</a><!--:--><!--:fr--><a href="https://reservation.miraiglobal.com/XMAS/reservation/show_request_cancel_reservation.htm?idtokenprovider=10907510&lang=fr" class="tracking-link" title="Ver/cancelar reserva" target="_blank">Voir/annuler réservation</a> | <a href="#" title="Área Clientes">Área Clientes</a><!--:-->
+<!--:fr--><a href="https://reservation.miraiglobal.com/XMAS/reservation/show_request_cancel_reservation.htm?idtokenprovider=100375722&lang=fr" class="tracking-link" title="Voir/Annuler réservation" target="_blank">Voir/Annuler réservation</a> | <a href="#" title="Área Clientes">Área Clientes</a><!--:-->
+<!--:de--><a href="https://reservation.miraiglobal.com/XMAS/reservation/show_request_cancel_reservation.htm?idtokenprovider=100375722&lang=de" class="tracking-link" title="Track/Cancel Reservation" target="_blank">Track/Cancel Reservation</a> | <a href="#" title="Área Clientes">Área Clientes</a><!--:-->
+</div>
