@@ -1,2 +1,13 @@
-		<a href="#myModal3" role="button" class="myModal myModal3" data-toggle="modal" title="<!--:es-->Contacto<!--:--><!--:en-->Contact<!--:--><!--:fr-->Contact<!--:--><!--:de-->Contact<!--:-->">
-		</a>
+<div class="contact-wrapper">
+<a href="#myModal3" role="button" class="myModal myModal3" data-toggle="modal" title="<!--:es-->Contacto<!--:--><!--:en-->Contact<!--:-->"><!--:es-->Contacto<!--:--><!--:en-->Contact<!--:--><!--:fr-->Contact<!--:--><!--:de-->Kontakt<!--:-->
+</a>
+</div>
+<div class="modal hide fade boxModal" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3 id="myModalLabel"><i class="icons ico-mail"></i><!--:es-->Contacta con nosotros:<!--:--><!--:en-->Contact us<!--:--><!--:fr-->Contactez-nous<!--:--><!--:de-->Kontaktieren Sie uns<!--:--></h3>
+	</div>
+	<div class="modal-body">
+		[contact-form-7 id="285" title="contacto"]
+	</div>
+</div>
