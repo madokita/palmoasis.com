@@ -1,0 +1,28 @@
+/********************
+*
+*   PIE currently adds full or partial support to IE 6 through 8 for the following CSS3 features:
+*     - border-radius
+*     - box-shadow
+*     - border-image
+*     - multiple background images
+*     - linear-gradient as background image
+*
+*	behavior: url(/wp-content/themes/NOMBRE-HOTEL/PIE.htc);  OJO!!! mira la url del navegador. Ahí tienes el nombre :)
+*
+*********************/
+
+.affix .engine_mashup {
+	box-shadow: 0px 2px 5px 0px #323232;
+}
+
+
+/*////////   PAGES   ////////*/
+/*HOME*/
+.wrapper-advantage {
+	background:#2b2b2b;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+.wrapper-advantage .wrapper-block .bg-block {
+	background:#6e6e6e;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}

@@ -12,8 +12,19 @@ Author: Mirai Espana
 
 h1 {}
 
-h2 {}
+h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
 section h2, section .offers-listing-wrapper h2 {}
+
+.top-title h2 {
+	color:#f5f4e9;
+	font-size:36px;
+	font-weight:700;
+	margin-left:50px;
+	margin-top:80px;
+	text-shadow: 2px 2px 1px #000;
+}
 
 section h3, .offers-detail-wrapper .section h4, #cookies-wrapper-content h2, #cookies-wrapper-content h1, .blog-wrapper .post h2 {}
 
@@ -56,10 +67,8 @@ body {}
 
 #logo {
 	position: relative;
-	top: 35px;
+	top: 26px;
 	z-index: 1;
-}
-
 }
 
 #header .content {}
@@ -133,24 +142,41 @@ img {
 	background:#363636;
 }
 /*FONT VARIATION*/
+.thin {
+	font-weight:300;
+}
 .opensans-condensed {
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+.opensans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.size18 {
+	font-size:18px;
 }
 
 .size20 {
 	font-size:20px;
 }
 
-.engine_mashup.square>div form legend {
+.engine_mashup.inline > div form legend {
+	border-bottom:none;
 	color:#003593;
+	display:block;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:18px;
 	font-weight:700;
+	line-height: 1em;
+	margin-bottom:5px;
 }
 
 /*FONT COLORS*/
 .grey {
 	color:#a8a8a8
+}
+.white {
+	color:#f5f4e9;
 }
 .marineblue {
 	color:#003593
@@ -229,7 +255,7 @@ img {
 
 /*ICONS*/
 i.sprite {
-	background: url('/files/icon-sprite00.png') no-repeat 0 0;
+	background: url('/files/icon-sprite03.png') no-repeat 0 0;
 	float:left;
 	height:30px;
 	margin-right:5px;
@@ -238,7 +264,40 @@ i.sprite {
 i.sprite.phone {
 	background-position: 0px -4px;
 }
+.wrapper-advantage i.sprite {
+	height:38px;
+	margin-right:5px;
+	width:42px;
+}
 
+i.sprite.advantage {
+	background-position: 0px -97px;
+}
+.advantage-box span:after {
+	background: url('/files/icon-sprite03.png') no-repeat right -349px;
+	content:' ';
+	display:block;
+	float:right;
+	height:43px;
+	width:30px;
+}
+i.sprite.present {
+	background-position: 0px -164px;
+}
+i.sprite.parking {
+	background-position: 0px -224px;
+}
+i.sprite.free-services {
+	background-position: 0px -288px;
+}
+
+
+.engine_mashup>div input.date {
+	background: url('/files/icon-sprite03.png') no-repeat 142px -36px;
+}
+.affix .engine_mashup>div input.date {
+	background-position: 93px -36px;
+}
 
 
 /*///////////////////////////////////*/
@@ -270,6 +329,124 @@ i.sprite.phone {
 	width: 100%;
 	z-index: 1000 !important;
 }
+
+/*CALENDAR*/
+/*--  motor calendar --*/
+#ui-datepicker-div, #noDispo .ui-widget-content {
+	border: 0!important;
+	border-radius: 0!important;
+	box-shadow: 0 0 5px #666!important;
+	font-family: 	font-family: Arial, sans-serif;
+	font-size: 15px !important;
+	padding: 10px!important;
+}
+
+.bookingstep1 div#noDispo #noDispoContents1 {
+	padding: 60px 183px 60px 100px!important;
+}
+
+.bookingstep1 #noDispo .price1 .ui-state-default,
+.bookingstep1 #noDispo #legend .price1 {
+	border: 0!important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	border: 0;
+	border-radius: 0;
+	padding: 6px!important;
+}
+
+.ui-datepicker th {
+	color: #999!important;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.ui-datepicker-group-middle {
+	outline: 2px solid #FFF;
+	position: relative;
+	z-index: 20;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+	border: 0!important;
+	top: 8px!important;
+}
+
+.ui-datepicker .ui-datepicker-prev.ui-state-hover, .ui-datepicker .ui-datepicker-next.ui-state-hover {
+	background: #EF6772!important;
+}
+
+.bookingstep1 #noDispo .ui-widget-header, .bookingstep1 #noDispo .ui-datepicker .ui-datepicker-title, .ui-datepicker .ui-datepicker-header, .ui-datepicker .ui-datepicker-buttonpane button,
+.offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .ui-datepicker-header {
+	background: #3baacc!important;
+	color: #fff!important;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, #noDispo .ui-datepicker td span, #noDispo .ui-datepicker td a {
+	border:0!important;
+	background: #F2F2F2!important;
+	padding: 6px;
+}
+
+.ui-datepicker th.ui-datepicker-week-end {
+	color: #444!important;
+}
+
+.ui-datepicker-week-end .ui-state-default,
+.ui-datepicker-week-end .ui-widget-content .ui-state-default,
+.ui-datepicker-week-end .ui-widget-header .ui-state-default {
+	background: #DDD!important;
+}
+
+.ui-datepicker-calendar ._selected-date span, .ui-datepicker-calendar ._selected-date a, .ui-datepicker-calendar ._checkin-date span,
+.ui-datepicker-calendar ._checkin-date a, .ui-datepicker-calendar ._checkout-date span, .ui-datepicker-calendar ._checkout-date a,
+.offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day._checkin-date a,
+.offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day._selected-date a,
+.offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day._checkout-date a,
+.ui-datepicker td:hover a {
+	background: #ffbe00!important;
+	color: #FFF;
+	font-weight: normal!important;
+	text-decoration: none;
+}
+
+.bookingstep1 #noDispo .price1:hover .ui-state-default, .bookingstep1 #noDispo .ui-widget-content .price1:hover .ui-state-default, .bookingstep1 #noDispo .price1 .ui-state-default, .bookingstep1 #noDispo .ui-widget-content .price1 .ui-state-default, .bookingstep1 #noDispo .ui-widget-content .price1 .ui-state-hover,
+.bookingstep1 #noDispo #legend .price1, .offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline .calendar-legend-offer-day a {
+	background: #90C137!important;
+	border:0!important;
+}
+
+.bookingstep1 #noDispo .price2 .ui-state-default, .bookingstep1 #noDispo .ui-widget-content .price2 .ui-state-default, .bookingstep1 #noDispo .ui-widget-content .price2 .ui-state-hover, .bookingstep1 #noDispo #legend .price2 {
+	background: #73B07B!important;
+}
+
+.bookingstep1 .ui-datepicker {
+	width: 19em;
+}
+
+.bookingstep1 #noDispo .price0 .ui-state-defaul, body.bookingstep1 #noDispo .ui-widget-contentt {
+	border: 0!important;
+}
+
+.bookingstep1 #noDispo .ui-datepicker-unselectable.ui-state-disabled.price0 {
+	background: rgba(0, 0, 0, 0)!important;
+}
+
+.bookingstep1 .ui-state-default, .bookingstep1 .ui-widget-content .ui-state-default,
+.bookingstep1 .ui-widget-header .ui-state-default {
+  padding: 6px;
+}
+
+.offers-detail-wrapper .offer-calendar-wrapper .offer-date .ui-datepicker-inline,
+.rooms-detail-wrapper .room-calendar-wrapper .room-date .ui-datepicker-inline {
+	padding: 10px
+}
+/*END CALENDAR*/
 
 .offers-detail-wrapper .offer-calendar-wrapper .offer-button[disabled="disabled"], .offers-detail-wrapper .offer-calendar-wrapper .offer-button[disabled="disabled"]:hover{
 	background: #e8e8e8;
@@ -327,7 +504,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 	border-radius:0;
 }
 /*TOP-IMAGE*/
-#top-image .absolute {
+#top-image .wrapper-toptitle {
 	bottom:auto;
 	left:0;
 	right:0;
@@ -340,6 +517,35 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /*---------------------------------------------------------------------------*/
 
 /* HOME */
+.wrapper-advantage {
+	background:rgba(43,43,43,0.74);
+	bottom:0;
+	left:0;
+	padding:5px 0;
+	right:0;
+}
+.wrapper-advantage .container {
+	text-align:center;
+}
+.wrapper-advantage .wrapper-block > div {
+	display:table-cell;
+	float:none;
+	padding:10px;
+	vertical-align:middle;
+}
+.wrapper-advantage .wrapper-block .bg-box {
+	background:rgba(110,110,110,0.4);
+}
+
+.wrapper-advantage .wrapper-block {
+	display:inline-table;
+	margin:0 auto;
+}
+.wrapper-advantage .wrapper-block .bg-box span {
+	display: table-cell;
+	height: 43px;
+	vertical-align: middle;
+}
 
 /* LOCATION */
 
@@ -473,17 +679,59 @@ ul#menu_web > li a:hover, ul#menu_web > li.current-menu-item > a, ul#menu_web > 
 	background:#fff;
 	max-width:244px;
 }
-.engine_mashup.square > div form {
-	padding:25px 35px;
+.engine_mashup.inline > div form {
+	padding:10px 35px;
 }
-.engine_mashup > div form .control-group label {
+.engine_mashup > div form .control-group label, .engine_mashup>div form .button-group .tracking-link {
 	font-size:13px;
 }
-.engine_mashup > div input[type=text] {
+.engine_mashup.inline > div form .control-group  input[type=text] {
 	background-color:#dbdbdb;
 	border:solid 1px #c8c8c8;
-	padding:8px;
+	margin-bottom:5px;
+	padding:6px 8px;
 }
+.engine_mashup.inline.one-row > div form .button-group input[type=submit] {
+	padding:6px 8px;
+}
+
+.affix-top .engine_mashup.inline > div form .control-group input[type=text] {
+	width:95%;
+}
+.affix-top .engine_mashup.inline > div form .button-group {
+	display:block;
+	margin-right:0;
+	margin-top:10px;
+}
+.engine_mashup.inline>div form .button-group a {
+	margin-bottom:0px;
+}
+.affix-top .engine_mashup.inline > div form .button-group#engine-tracking-link-wrapper {
+	margin-top:0px;
+}
+.affix-top .engine_mashup>div form .control-group label {
+	line-height:1.2em;
+}
+
+.engine_mashup > div ._activeDatePicker label {
+	text-shadow:none !important;
+}
+
+.affix .engine_mashup {
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+	max-width:100%;
+}
+.affix .engine_mashup.inline > div form legend {
+	display: none;
+}
+.affix .engine_mashup.inline>div form .control-group label {
+	vertical-align:middle;
+}
+.affix .engine_mashup > div form .control-group label.label-code {
+	margin-right:5px;
+}
+
 /* submit buttons (engine mashup, form, blog...) */
 .engine_mashup > div form .button-group input[type="submit"], .mapa .formRuta input.calculaRuta, #mirai_be7 input, #respond .form-submit #submit, .wpcf7 .wpcf7-form input.wpcf7-submit, .offers-listing-wrapper .offer .offer-button, .offers-detail-wrapper .offer-calendar-wrapper .offer-button, #modal-engine .button-group input[type="submit"] {
 	background: #0077ad;
@@ -498,6 +746,7 @@ ul#menu_web > li a:hover, ul#menu_web > li.current-menu-item > a, ul#menu_web > 
 }
 .engine_mashup > div form .button-group input[type="submit"]:hover, .mapa .formRuta input.calculaRuta:hover, #mirai_be7 input:hover, #respond .form-submit #submit:hover, .wpcf7 .wpcf7-form input.wpcf7-submit:hover, .offers-listing-wrapper .offer .offer-button:hover, .offers-detail-wrapper .offer-calendar-wrapper .offer-button:hover, #modal-engine .button-group input[type="submit"]:hover {
 	background:#0497DA;
+	color:#fff;
 }
 .engine_mashup > div form .button-group input[type="submit"] {
 	background: #ffbe00;
