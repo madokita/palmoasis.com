@@ -15,6 +15,17 @@
 	box-shadow: 0px 2px 5px 0px #323232;
 }
 
+.bg-text-black {
+	background:#2b2b2b;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+
+/*reviews*/
+i.sprite.reviews {
+	background:#ffffff;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
 
 /*////////   PAGES   ////////*/
 /*HOME*/
