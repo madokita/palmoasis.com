@@ -19,6 +19,9 @@
 	background:#2b2b2b;
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
 }
+.figure-ie8 {
+	overflow:hidden;
+}
 
 /*reviews*/
 i.sprite.reviews {

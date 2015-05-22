@@ -20,6 +20,7 @@ section h2, section .offers-listing-wrapper h2, span.my-shell-hdr-text {
 	color:#000;
 	font-size:22px;
 	font-weight:700;
+	line-height:40px;
 	text-align:center;
 	text-transform:uppercase;
 }
@@ -94,17 +95,19 @@ a {
 	color:#6E6E6E;
 	text-decoration:underline;
 }
-a, ul#menu_web > li, .img-content h4, .bg-text-black {
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	transition: all .5s ease;
+a, ul#menu_web > li, .img-content:before, .img-content h4, .bg-text-black {
+	-webkit-transition: all .8s ease;
+	-moz-transition: all .8s ease;
+	-ms-transition: all .8s ease;
+	-o-transition: all .8s ease;
+	transition: all .8s ease;
 }
 
 a:hover {}
 
-body {}
+body.cat-offers {
+	font-family: 'Open Sans', sans-serif;
+}
 
 #header {}
 
@@ -189,6 +192,10 @@ hr {
 	width: 500px;
 }
 
+figure {
+	overflow:hidden;
+}
+
 img {
 	width: auto
 }
@@ -209,10 +216,35 @@ img {
 	position:absolute;
 	right:-10px;
 	top:20px;
+	z-index:2;
 }
 .img-content:hover h4 {
 	background:#1A5C85;
 }
+
+.img-content img {
+	min-height:320px;
+	width:100%;
+	transform: rotate(0) scale(1);
+	-webkit-transform: rotate(0) scale(1);
+	-moz-transform: rotate(0) scale(1);
+	-o-transform: rotate(0) scale(1);
+	-ms-transform: rotate(0) scale(1);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+a.img-content:hover img{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+
 .img-content:before {
 	background: -moz-linear-gradient(top,  rgba(65,181,224,0.2) 0%, rgba(137,214,244,0.2) 65%, rgba(164,221,244,0.2) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(65,181,224,0.2)), color-stop(65%,rgba(137,214,244,0.2)), color-stop(100%,rgba(164,221,244,0.2))); /* Chrome,Safari4+ */
@@ -227,11 +259,7 @@ img {
 	position:absolute;
 	right:0;
 	top:0;
-	-webkit-transition: opacity .15s ease-in-out;
-	-moz-transition: opacity .15s ease-in-out;
-	-ms-transition: opacity .15s ease-in-out;
-	-o-transition: opacity .15s ease-in-out;
-	transition: opacity .15s ease-in-out;
+	z-index:1;
 }
 
 .img-content:hover:before {
@@ -242,10 +270,7 @@ img {
 .img-content.no-bg:before {
 	opacity:0;
 }
-.img-content img {
-	min-height:320px;
-	width:100%
-}
+
 .review-text {
 	bottom: 0;
 	left: 0;
@@ -264,6 +289,7 @@ img {
 	padding:5px 10px;
 	position:absolute;
 	right:0;
+	z-index:2;
 }
 a:hover .bg-text-black {
 	background:rgba(43,43,43,0.5);
@@ -810,7 +836,22 @@ div.hssurveys_full div.note {
 /* PHOTOS */
 
 /* OFFERS */
-
+.offers-listing-wrapper .rss-text {
+	margin-top:20px !important;
+}
+.offers-listing-wrapper .offer .offer-link, .rooms-detail-wrapper .offer .offer-link {
+	background:#f6f6f6;
+	border:none;
+	color: #6e6e6e;
+	text-decoration: none;
+}
+.offers-listing-wrapper .offer .offer-title, .rooms-detail-wrapper .offer .offer-title {
+	color: #ffbe00;
+	font-weight: 300;
+}
+.offers-listing-wrapper .offer .offer-link .offer-box span {
+	min-height:20px;
+}
 /* REVIEWS */
 div.hssurveys_full .comments p.commentsPerson span.date {
 	color: #000 !important;
@@ -824,6 +865,7 @@ div.hssurveys_full {
 	padding: 2%; 
 	width: 96%;
 }
+
 
 .reviewsOn .questions li p.answer {
 	line-height: 22px !important;
@@ -855,6 +897,21 @@ div.hssurveys_full {
 
 .blog-wrapper .entry ul li {
 	list-style-type: disc;
+}
+
+/* NOT FOUND*/
+.not_found section#main .content {
+	height:400px;
+}
+.not_found section#main .content {
+	margin-top:40px;
+}
+.not_found section#main .content p {
+	color: #6e6e6e;
+	font-size: 18px;
+	line-height: 1.4em;
+	padding: 40px 200px;
+	text-align: center;
 }
 
 /* BOOKINGSTEP */
@@ -1024,7 +1081,9 @@ ul#menu_web > li.current-menu-item, ul#menu_web > li:hover {
 	background: #0077ad;
 	border: none;
 	border-radius: 0;
+	box-shadow: none;
 	color: #fff;
+	font-size:inherit;
 	letter-spacing: 1px;
 	outline:none;
 	padding: 5px 10px;
@@ -1033,13 +1092,13 @@ ul#menu_web > li.current-menu-item, ul#menu_web > li:hover {
 }
 
 .engine_mashup > div form .button-group input[type="submit"]:hover, .mapa .formRuta input.calculaRuta:hover, #mirai_be7 input:hover, #respond .form-submit #submit:hover, .wpcf7 .wpcf7-form input.wpcf7-submit:hover, .offers-listing-wrapper .offer .offer-button:hover, .offers-detail-wrapper .offer-calendar-wrapper .offer-button:hover, #modal-engine .button-group input[type="submit"]:hover {
-
+	background: #0497da;
+	color: #fff;
+	text-decoration: none;
 }
 .engine_mashup > div form .button-group input[type="submit"], .link-btn, .offers-mashup .btn {
 	background: #ffbe00;
 	border-radius: 0;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 	color:#333;
 	font-size:13px;
 	font-weight:700;
