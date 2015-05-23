@@ -47,10 +47,11 @@ section h3, .offers-detail-wrapper .section h4, #cookies-wrapper-content h2, #co
 
 h3 {}
 
-.img-content h3 {
+.bg-text-black h3 {
 	color:#fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 22px;
+	font-weight:300;
 }
 .bg-text-black p {
 	color:#a8a8a8;
@@ -89,13 +90,15 @@ h4 {}
 	font-weight: 700;
 }
 
-h1, h2, h3, h4 {}
+h1, h2, h3, h4 {
+	line-height:1.3em;
+}
 
 a {
 	color:#6E6E6E;
 	text-decoration:underline;
 }
-a, ul#menu_web > li, .img-content:before, .img-content h4, .bg-text-black {
+a, ul#menu_web > li, .img-content:before, .img-content h4, .bg-text-black, .offers-mashup .btn {
 	-webkit-transition: all .8s ease;
 	-moz-transition: all .8s ease;
 	-ms-transition: all .8s ease;
@@ -222,8 +225,11 @@ img {
 	background:#1A5C85;
 }
 
+.figure-ie8 img {
+	min-height:310px;
+}
 .img-content img {
-	min-height:320px;
+	min-height:310px;
 	width:100%;
 	transform: rotate(0) scale(1);
 	-webkit-transform: rotate(0) scale(1);
@@ -237,12 +243,12 @@ img {
 	transition: all 0.5s ease-in-out;
 }
 
-a.img-content:hover img{
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
+a.img-content:hover img {
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
 }
 
 .img-content:before {
@@ -426,6 +432,14 @@ a:hover .bg-text-black {
 	margin-left:20px;
 }
 
+/*absolute position*/
+.left1 {
+	left:10px;
+}
+.right1 {
+	right:10px;
+}
+
 /*ICONS*/
 i.sprite {
 	background: url('/files/icon-sprite06.png') no-repeat 0 0;
@@ -504,6 +518,10 @@ i.sprite.reviews {
 
 .align-right {
 	text-align: right;
+}
+
+.align-justify {
+	text-align: justify;
 }
 
 .relative {
@@ -687,8 +705,15 @@ i.sprite.reviews {
 }
 
 .bullets li {
-list-style-position: inside;
-list-style-type: disc;
+	background: url('/files/icon-sprite07.png') 0 -611px no-repeat;
+	padding-left: 30px;
+	height: 37px;
+	line-height: 22px;
+}
+.bullets li ul li{
+	background:none;
+	height:20px;
+	padding-left: 0;
 }
 
 /*reviews*/
@@ -1277,7 +1302,7 @@ a.link-btn:hover, .offers-mashup .btn:hover {
 /* Large desktop */
 @media (min-width: 1200px) {
 /*PHOTOS WITH LINK*/
-	.img-content img {
+	.img-content img, .figure-ie8 img {
 		min-height:338px;
 	}
 
