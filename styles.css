@@ -9,6 +9,7 @@ Author: Mirai Espana
 /*---------------------------------------------------------------------------*/
 /*---------------------------- GENERIC STYLES -------------------------------*/
 /*---------------------------------------------------------------------------*/
+.top-title a {display:none;}
 
 h1 {}
 
@@ -105,7 +106,7 @@ a {
 	color:#6E6E6E;
 	text-decoration:underline;
 }
-a, ul#menu_web > li, .img-content:before, .img-content h4, .bg-text-black, .offers-mashup .btn, .content-link-booking h4 {
+a, ul#menu_web > li, .img-content:before, .img-content h4, .bg-text-black, .offers-mashup .btn, .content-link-booking h4, .bg-text-black p {
 	-webkit-transition: all .8s ease;
 	-moz-transition: all .8s ease;
 	-ms-transition: all .8s ease;
