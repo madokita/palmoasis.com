@@ -1200,6 +1200,9 @@ div#mirai_totalPrice span {
 	border-radius: 0 !important;
 	box-shadow:none !important;
 }
+#cartSummary {
+	border-radius: 0 !important;
+}
 #mirai_roomSelection .width1 {
 	border-color: #f6f6f6 !important;
 }
