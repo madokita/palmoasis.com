@@ -16,12 +16,12 @@ h1 {}
 h2 {
 	font-family: 'Open Sans Condensed', sans-serif;
 }
-section h2, span.my-shell-hdr-text, .cat-cookies-policy h1, .cat-cookies-policy h2 {
+section h2, span.my-shell-hdr-text, .cat-cookies-policy h2 {
 	background:#d9f6ff;
 	color:#000;
-	font-size:22px;
+	font-size:22px !important;
 	font-weight:700;
-	line-height:40px;
+	line-height:40px !important;
 	text-align:center;
 	text-transform:uppercase;
 }
@@ -41,10 +41,10 @@ span.my-shell-hdr-text {
 	background-position: -27px -977px !important;
 }
 
-.top-title h2 {
+section .top-title h2 {
 	background:transparent;
 	color:#f5f4e9;
-	font-size:36px;
+	font-size:36px !important;
 	font-weight:700;
 	margin-left:50px;
 	margin-top:80px;
@@ -147,6 +147,9 @@ body.cat-offers {
 
 #header .content {}
 
+.top-phone {
+	line-height: 1.4em;
+}
 #main {}
 
 #main .content {}
@@ -351,10 +354,17 @@ a.img-content:hover img, .content-link-booking:hover img {
 	background:rgba(43,43,43,0.74);
 	bottom:0;
 	left:0;
+	min-height:108px;
 	padding:5px 10px;
 	position:absolute;
 	right:0;
 	z-index:2;
+}
+.bg-text-black.heigher {
+	min-height:136px;
+}
+#instalaciones-others .bg-text-black {
+	min-height:32px;
 }
 .content-link-booking .bg-text-black {
 	left:10px;
@@ -834,8 +844,8 @@ ul.bullets {
 }
 
 ul.bullets li { 
-	line-height: 25px;
-
+	line-height: 17px;
+	margin-bottom: 12px;
 }
 
 ul.bullets li:before {
@@ -848,10 +858,12 @@ ul.bullets li:before {
 	padding-left: 30px;
 	height: 37px;
 	line-height: 22px;
+	margin-bottom: 10px;
 }
 .clock li ul li{
 	background:none;
 	height:20px;
+	margin-bottom: 0;
 	padding-left: 0;
 }
 
@@ -1017,6 +1029,7 @@ div.hssurveys_full div.note {
 	font-weight: 500;
 }
 .offers-listing-wrapper .offer .offer-link .offer-box span {
+	font-size:1.2em;
 	min-height:20px;
 }
 .offers-detail-wrapper .offer-header-content-wrapper .offer-title {
@@ -1045,6 +1058,13 @@ div.hssurveys_full {
 .reviewsOn .questions li p.answer {
 	line-height: 22px !important;
 	padding: 0 6px 0 10px !important;
+}
+/*COOKIES*/
+ul.cookiesBrowser li {
+	display: inline-block;
+	font-size: 16px;
+	margin: 14px 0;
+	width: 24%;
 }
 
 /* BLOG */
@@ -1476,6 +1496,9 @@ h4 .btn.engine_button {
 	/*background-image: url("/wp-content/themes/mirai/img/glyphicons-halflings-white.png");*/
 	margin: 3px 2px 0 0;
 }
+html[lang=de] .engine_mashup > div form .button-group .icon-lock {
+	display:none;
+}
 
 .engine_mashup > div form .button-group .tracking-link {}
 
@@ -1643,12 +1666,77 @@ h4 .btn.engine_button {
 	.on-page-slideshow .slideshow .contSlideshow .txtslider {
 		top:490px;
 	}
-
+}
 /* ipad portrait - landscape */
 @media (min-device-width: 768px) and (max-device-width: 979px){}
 
 /* customize ipad portrait */
 @media (min-device-width: 768px) and (max-device-width: 979px) and (orientation : portrait) {
+/*FONT SIZE*/
+	.size20 {
+		font-size:19px;
+	}
+	.bg-text-black h3 {
+		font-size:20px;
+		margin-top:10px;
+	}
+/*PICTURES*/
+	figure, #top-image img {
+		height:400px;
+	}
+	.no-bg figure, .span3 figure {
+		height:auto;
+	}
+	figure img {
+		width:100%;
+	}
+/*ADVANTAGE*/
+
+/*HEADER*/
+	#logo {
+		left:-15px;
+		top:5px;
+	}
+	ul#menu_web {
+		width:100%;
+	}
+	#top-image .span3 {
+		width:40%;
+	}
+	#top-image .span9 {
+		width:60%;
+	}
+	section .top-title h2 {
+	font-size:28px !important;
+	}
+	
+/*CONTENTS*/
+	.row > .span6, .row > .span4 {
+		width:100%;
+	}
+	.pdd8, .pdd6 {
+		padding-left:0;
+		padding-right:0;
+	}
+	.span3.pdd8, .span3.pdd6 {
+		padding-left:10px;
+		padding-right:10px;
+	}
+	.left1 {
+		left:0;
+	}
+	.right1 {
+		right:0;
+	}
+	.span3 .left1{
+		left:10px;
+	}
+	.span3 .right1 {
+		right:10px;
+	}
+
+
+
 	.bookingstep1 #mirai_roomSelectionContainer {
 		width: 98%;
 	}
