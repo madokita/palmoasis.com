@@ -115,6 +115,9 @@ a {
 	color:#6E6E6E;
 	text-decoration:underline;
 }
+a.img-content, .img-content a {
+	text-decoration:none;
+}
 a, .img-content:before, .img-content h4, .bg-text-black, .offers-mashup .btn, .content-link-booking h4, .bg-text-black p {
 	-webkit-transition: all .8s ease;
 	-moz-transition: all .8s ease;
@@ -1680,9 +1683,15 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 		font-size:20px;
 		margin-top:10px;
 	}
+	.size22 {
+		font-size:19px;
+	}
 /*PICTURES*/
-	figure, #top-image img {
+	figure {
 		height:400px;
+	}
+	#top-image img, #top-image figure {
+		height:450px;
 	}
 	.no-bg figure, .span3 figure {
 		height:auto;
@@ -1690,7 +1699,19 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 	figure img {
 		width:100%;
 	}
+	.img-content:before {
+		opacity:0;	
+	}
 /*ADVANTAGE*/
+	i.sprite.advantage {
+		display:none;
+	}
+	.wrapper-advantage .wrapper-block > div.advantage-box {
+		padding:10px 0;
+	}
+	.wrapper-advantage.size18, html[lang=de] .wrapper-advantage .size22 {
+		font-size:13px;
+	}
 
 /*HEADER*/
 	#logo {
@@ -1703,13 +1724,25 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 	#top-image .span3 {
 		width:40%;
 	}
+	#top-image .wrapper-advantage .span3 {
+		width:24.999999999999996% !important;
+	}
 	#top-image .span9 {
 		width:60%;
 	}
 	section .top-title h2 {
-	font-size:28px !important;
+		font-size:28px !important;
+		margin-left:20px;
 	}
-	
+/*FOOTER*/
+	#menu_aux1 {
+		position: relative;
+		top: -65px;
+		left: 62px;
+	}
+	html[lang=en] #menu_aux1 {
+		position: initial;
+	}
 /*CONTENTS*/
 	.row > .span6, .row > .span4 {
 		width:100%;
@@ -1718,9 +1751,11 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 		padding-left:0;
 		padding-right:0;
 	}
-	.span3.pdd8, .span3.pdd6 {
-		padding-left:10px;
+	.span3.pdd6 {
 		padding-right:10px;
+	}
+	.span3.pdd8 {
+		padding-left:10px;
 	}
 	.left1 {
 		left:0;
@@ -1733,6 +1768,26 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 	}
 	.span3 .right1 {
 		right:10px;
+	}
+	.align-justify {
+		text-align:center;
+	}
+	.content-link-booking .link-btn {
+		float:left;
+		padding: 0;
+	}
+/*PAGES*/
+/*APARTMENTS*/
+	.offers-mashup dl dt{
+		font-size:26px;
+	}
+/*ROOMS*/
+	.on-page-slideshow .slideshow .contSlideshow a img, .on-page-slideshow .slideshow .contSlideshow img {
+		height:466px;
+	}
+/*ACTIVIDADES*/
+	#actividades-grancanaria figure, #localizacion-howtogo figure, #localizacion-gotobeach figure, #grancanaria-description figure, #grancanaria-activities figure {
+		height:310px;
 	}
 
 
