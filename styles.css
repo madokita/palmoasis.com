@@ -1612,7 +1612,9 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 	margin-bottom: 10px;
 	width: 100% !important;
 }
-
+.mapa .external-link {
+	text-align: right;
+}
 .mapa .formRuta input {
 	margin-right: 10px;
 }
@@ -1734,6 +1736,20 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 		font-size:28px !important;
 		margin-left:20px;
 	}
+	html[lang=de] .cancel-reservation {
+		font-size:12px;
+	}
+/*MOTOR AFFICX*/
+	.affix .engine_mashup.inline>div form .control-group input[type="text"].date {
+		width:5.4em;
+	}
+	.affix #engine-tracking-link-wrapper {
+		display:none;
+	}
+	.affix .engine_mashup > div form .control-group label.label-code {
+		line-height:1em;
+		width:80px;
+	}
 /*FOOTER*/
 	#menu_aux1 {
 		position: relative;
@@ -1742,6 +1758,19 @@ html[lang=de] .engine_mashup > div form .button-group .icon-lock {
 	}
 	html[lang=en] #menu_aux1 {
 		position: initial;
+	}
+	#footer #wpcf7-f284-o2 input.wpcf7-email {
+		width:120px;
+	}
+	#back-top {
+		bottom:50px;
+	}
+	html[lang=de] #menu_aux2 li {
+		width:100%
+	}
+/*MODAL*/
+	.modal.fade {
+		top:50%;
 	}
 /*CONTENTS*/
 	.row > .span6, .row > .span4 {
