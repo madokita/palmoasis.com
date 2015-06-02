@@ -17,50 +17,37 @@
 
 .bg-text-black {
 	background:#2b2b2b;
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	
+}
+.img-wrapper .bg-text-black, .img-content .bg-text-black {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#702b2b2b,EndColorStr=#702b2b2b);
+	background:none;
+}
+.bg-text-black p {
+	color:#ddd;
 }
 .wrapper-advantage .wrapper-block .bg-box {
 	background:#6E6E6E;
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
 }
+
 .figure-ie8 {
 	overflow:hidden;
 }
 
 /*reviews*/
-i.sprite.reviews:before {
-	background: #fff;
-	content:" ";
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-	display:inline-block;
-	height:100px;
-	left:100px;
-	position:relative;
-	top:0px;
-	width:100%;
-	z-index:-1;
+i.sprite.reviews{
+	background: url('/files/ie-reviews.png') no-repeat 0 0 ;
 }
-/*i.sprite.reviews {
-	background: #fff !important;
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-}*/
-/*i.sprite.reviews:after {
-	background: url('/files/icon-sprite09.png') no-repeat center -460px ;
-	border:solid red 1px; 
-	content:" ";
-	display:inline-block;
-	height:100px;
-	position:relative;
-	top:-100px;
-	width:100%;
-}*/
-
 /*Button BOOK*/
 .content-link-booking .link-btn {
 	position:relative;
 	right:0px;
 	top:0px;
-
+}
+.affix .engine_mashup {
+	border-bottom:1px solid #ddd;
 }
 
 /*////////   PAGES   ////////*/
@@ -72,4 +59,15 @@ i.sprite.reviews:before {
 .wrapper-advantage .wrapper-block .bg-block {
 	background:#6e6e6e;
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+}
+/*APARTMENTS*/
+.on-page-slideshow .slideshow .contSlideshow .txtslider {
+	background:#2b2b2b;
+	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+}
+.on-page-slideshow .prev {
+	text-indent:-2000px;
+}
+.on-page-slideshow .next {
+	text-indent:2000px;
 }
